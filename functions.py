@@ -35,7 +35,8 @@ def splitDateTime(d1):
              'improvement_surcharge','total_amount']]
     return d1
 
-# Sınıf sayısı için 1 ve 2 olan değerleri 0 ve 1 yapmalıyız ki iki farklı sınıfımız olduğunu Estimator API anlasın
+# Sınıf sayısı için 1 ve 2 olan değerleri 0 ve 1 yapmalıyız ki 
+# İki farklı sınıfımız olduğunu Estimator API anlasın
 def label_fix(label):
     if label == 1:
         return 0
