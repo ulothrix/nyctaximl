@@ -29,7 +29,10 @@ def splitDateTime(d1):
     temp = pd.DatetimeIndex(d1['tpep_pickup_datetime'])
     d1['Time'] = temp.time
     d1['Date'] = temp.date
-    d1 = d1[['VendorID','Date','Time','tpep_pickup_datetime','tpep_dropoff_datetime','passenger_count','trip_distance','RatecodeID','store_and_fwd_flag','PULocationID','DOLocationID','payment_type','fare_amount','extra','mta_tax','tip_amount','tolls_amount','improvement_surcharge','total_amount']]
+    d1 = d1[['VendorID','Date','Time','tpep_pickup_datetime','tpep_dropoff_datetime',
+             'passenger_count','trip_distance','RatecodeID','store_and_fwd_flag','PULocationID',
+             'DOLocationID','payment_type','fare_amount','extra','mta_tax','tip_amount','tolls_amount',
+             'improvement_surcharge','total_amount']]
     return d1
 
 # Sınıf sayısı için 1 ve 2 olan değerleri 0 ve 1 yapmalıyız ki iki farklı sınıfımız olduğunu Estimator API anlasın
